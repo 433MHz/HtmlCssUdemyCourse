@@ -4,13 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inline vs Block</title>
+    <title>Div, span, id and class</title>
+    <style>
+        .card{
+            border: 1px solid #ccc;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .enhance{
+            background-color: black;
+            color: yellow;
+        }
+    </style>
 </head>
 <body>
-    <p style="border: solid 5px green;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti obcaecati tempora, excepturi dignissimos quasi illum officia, quae consectetur doloremque quas accusamus quos cumque dolores? Ullam vero at voluptates non nihil?</p>
-    <p style="border: solid 5px green;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus obcaecati commodi ratione perferendis non voluptatum, et ipsa quibusdam aliquid minima modi repellat eius consequatur voluptates id nemo quos veritatis reprehenderit.</p>
-    <a href="#" style="border: solid 5px red;">dsa</a>
-    <a href="" style="border: solid 5px red;">sda</a>
-    <ul style="border: 5px green solid;"></ul>
+    <div id="main-header">
+        <h1>My website</h1>
+        <p>A site about me</p>
+    </div>
+    <ul id="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div id="about" class="card">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda praesentium, eos non asperiores <span class="enhance"> laboriosam, consequatur mollitia corporis velit quis sapiente? Qui nobis accusamus provident tempora </span> molestias harum. Sunt non est quidem aperiam voluptatibus dolorum commodi. Natus eius repudiandae, porro fugit mollitia deserunt iusto distinctio quidem architecto modi, culpa dignissimos.</p>
+    </div>
+
+        <div id="contact" class="card">
+            <h3>Contact</h3>
+             <ul>
+                 <li>Adress: 50 Main st, Boston MA</li>
+                 <li>Phone: 555 555 555</li>
+                 <li>Email: me@gmail.com</li>
+             </ul>
+        </div>
+
+        <div id="footer">
+            <p>Copyright 2019</p>
+        </div>
 </body>
 </html>
