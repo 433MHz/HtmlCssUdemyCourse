@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Form Styling</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: #4f547a;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        #header h1{
+            font-weight: 400;
+            padding-top: 20px;
+            font-size: 30px;
+            margin-bottom: 7px;
+        }
+
+        #header p{
+            margin-top: 7px;
+            margin-bottom: 20px;
+        }
+
+        #container{
+            background: #fff;
+            margin: auto;
+            width: 300px;
+            text-align: left;
+        }
+
+        #container .inputs{
+            width: 80%;
+            display: block;
+            margin: auto;
+            height: 25px;
+            border: solid 1px #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        #container #button {
+            color: #fff;
+            background: #61a597;
+            border: none;
+            font-size: 12px;
+            height: 30px;
+        }
+
+        #container #button:hover{
+            cursor: pointer;
+            background: #62978C;
+        }
+
+        #container label{
+            display: inline-block;
+            margin-left: 25px;
+            color: #333;
+
+        }
+
+        #mainContainer{
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        #header{
+            text-align: center;
+        }
+
+        #termsFooter{
+            padding: 10px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        #termsFooter a{
+            text-decoration: none;
+        }
+
+        #lastFooter{
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        #lastFooter a{
+            color: #61a597;
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main id="mainContainer">
+    <section id="container">
+        <header id="header">
+            <h1>Sign Up</h1>
+            <p>It's free and only takes a minute</p>
+        </header>
+        <label for="firstName">First Name</label>
+        <input class="inputs" type="text" name="firstName" id="firstName">
+        <label for="lastName">Last Name</label>
+        <input class="inputs" type="text" name="lastName" id="lastName">
+        <label for="email">Email</label>
+        <input class="inputs" type="email" name="email" id="email">
+        <label for="password">Password</label>
+        <input class="inputs" type="password" name="password" id="password">
+        <label for="confirmPassword">Confirm Password</label>
+        <input class="inputs" type="password" name="confirmPassword" id="confirmPassword">
+        <button class="inputs" id="button" type="submit">Sign Up</button>
+        <footer id="termsFooter">
+        <p>By clicking the Sign Up button, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></p>
+        </footer>
+    </section>
+    <footer id="lastFooter">
+        Already have an acount? <a href="#">Login here</a>
+    </footer>
+    </main>
+</body>
+</html>
